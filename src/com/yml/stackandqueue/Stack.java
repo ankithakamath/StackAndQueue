@@ -29,6 +29,27 @@ public class Stack {
 			temp = temp.next;
 		}
 	}
-}
+		public int pop() {
+			if(head == null) {
+				System.out.println("The stack has no elements");
+				return 0;
+			}
+			Node temp = head;
+			head = temp.next;
+			return temp.data;
+		}
+		
+		
+		
+		public int peak() {
+			if(head == null) {
+				System.out.println("The stack has no elements");
+				return 0;
+			}
+			Node temp = head;
+			return temp.data;
+		}
+	}
+
 
 

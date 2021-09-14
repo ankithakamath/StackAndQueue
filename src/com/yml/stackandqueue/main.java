@@ -11,6 +11,13 @@ stack.push(70);
 stack.push(30);
 stack.push(56);
 stack.print();
+
+//Ability to peak and pop from the stack till its empty
+stack.pop();
+stack.peak();
+stack.pop();
+
+stack.print();
 	}
 
 }
