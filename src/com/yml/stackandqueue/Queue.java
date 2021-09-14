@@ -34,7 +34,16 @@ private Node head;
 		}
 		return isAdded;
 	}
-	
+	//to dequeue the queue
+	public int dequeue() {
+		if(head == null) {
+			System.out.println("The queue is empty");
+			return 0;
+		}
+		Node temp = head;
+		head = temp.next;
+		return temp.data;
+	}
 	//to print the queue
 	public void print() {
 		Node temp = head;
